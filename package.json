@@ -8,9 +8,13 @@
     "gulp-autoprefixer": "0.0.8",
     "gulp-changed": "^0.4.0",
     "gulp-coffee": "^2.0.1",
+    "gulp-csscomb": "^3.0.0",
     "gulp-haml": "0.0.8",
+    "gulp-html-prettify": "0.0.1",
     "gulp-less": "^1.3.0",
     "gulp-livereload": "^2.1.0",
+    "gulp-minify-css": "^0.3.6",
+    "gulp-uglify": "^0.3.1",
     "gulp-watch": "^0.6.8",
     "tiny-lr": "0.0.7"
   },
