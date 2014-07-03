@@ -1,0 +1,81 @@
+body{
+	background: #EEEEEE;
+	margin: 0px;
+}
+
+#wrap{
+	width: 800px;
+	height: 2000px;
+	background: #FFF;
+	border: 1px solid #DDD;
+	margin: 60px auto;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1
+{
+    margin: 60px auto;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 54px;
+}
+
+.upward_wrap{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 30px;
+	right: 30px;
+}
+
+.upward{
+	z-index:9999;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 0px;
+	transition: all 0.4s;
+	font-family: "Trebuchet MS";
+	color: #949494;
+	font-size: 12px;
+	line-height: 145px;
+	text-align: center;
+	border-radius: 4px;
+	background: #3A609E;
+
+	&:before, &:after{
+		transition: all 0.4s;
+		position: absolute;
+		content: '';
+		width: 25px;
+		height: 8px;
+		background: #5B86C9;
+		box-sizing: border-box;
+		border-radius: 8px;
+	}
+
+	&:before{
+		transform: rotate(-45deg);
+		top: 24px;
+		right: 24px;
+	}
+
+	&:after{
+		transform: rotate(45deg);
+		top: 24px;
+		left: 24px;
+	}
+
+	&:active{
+		transition: all 0.4s;
+		bottom: -10px;
+		opacity: 0;
+	}
+
+	&:active:before, &:active:after{
+		transition: all 0.4s;
+		top:30px;
+	}
+}
