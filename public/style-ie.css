@@ -27,24 +27,7 @@
 .upward:before,
 .upward:after
 {
-    position: absolute;
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 25px;
-    height: 8px;
-
-    content: '';
-    -webkit-transition: all .4s;
-       -moz-transition: all .4s;
-         -o-transition: all .4s;
-            transition: all .4s;
-
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-    background: #5b86c9;
+    display: none;
 }
 .upward:before
 {
