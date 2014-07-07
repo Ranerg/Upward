@@ -12,7 +12,6 @@
         button = $(opts.button);
         $(button).addClass('access');
         $(window).scroll(function() {
-          console.log(this);
           if (!$(button).hasClass('scroll')) {
             if ($(this).scrollTop() > 400) {
               $(button).upward('show');
